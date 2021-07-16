@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  top: 40%;
+  border:1px solid #323332;
+  border-radius: 5px;
+  height: auto;
+  width: 400px;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin:auto;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+}
+.fas{
+  line-height: 120px;
+}
+.icon{
+  font-size: 70px;
+  background: #323332;
+  height: 120px;
+  width: 120px;
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.form input { 
+  height: 50px;
+  width: 95%;
+  outline: 0;
+  background: #e2e1e1;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  height: 50px;
+  width: 95%;
+  font-weight: 550;
+  outline: 0;
+  background: #323332;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form input:hover{
+  box-shadow: 2px 2px 15px rgba(0,0,0,.4);
+}
+.form button:hover{
+  box-shadow: 2px 2px 15px rgba(0,0,0,.4);
+  background: #1f1f1f;
+}
+

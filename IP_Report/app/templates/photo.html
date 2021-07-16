@@ -1,0 +1,30 @@
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<body>
+    <div class="center modal-box">
+        <div class="this">
+    </div>
+    <div class="fa fa-upload icon1">
+    </div>
+    <header>Upload a PDF File</header>
+    <form action="{% url 'image_extractor' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" class="form-inputs" name="name" placeholder="filter by class de nice" />
+        <input type="number" class="form-inputs" name="no_of_pages" min="0" placeholder="upto which page" />
+        <input type="file" id="file" name="file" required>
+        <button>Upload</button>
+    </form>
+    <script>
+      $(document).ready(function(){
+        $('.modal-box').toggleClass("show-modal");
+      });
+    </script>
+
+  </body>
+</html>
